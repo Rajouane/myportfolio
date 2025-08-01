@@ -42,18 +42,19 @@ function Home() {
 
         
         <div style={{ flex: "1 1 500px", minWidth: "300px" }}>
-          <img
-            src="/portfolio.jpg"
-            alt="Otmane Rajouane"
-            style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "15px",
-              boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
-              objectFit: "cover",
-            }}
-            className="animate__animated animate__fadeInRight"
-          />
+      <img
+  src={process.env.PUBLIC_URL + "/portfolio.jpg"}
+  alt="Otmane Rajouane"
+  style={{
+    width: "100%",
+    height: "auto",
+    borderRadius: "15px",
+    boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
+    objectFit: "cover",
+  }}
+  className="animate__animated animate__fadeInRight"
+/>
+
         </div>
       </div>
     </div>
