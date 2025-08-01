@@ -1,41 +1,43 @@
 import React from "react";
+import { FaReact, FaJava, FaCar, FaTasks, FaChartLine } from "react-icons/fa";
+import { SiLaravel } from "react-icons/si";
 
 const projects = [
   {
     title: "MangeTask",
     description: "Task management app built using React and Laravel.",
     link: "https://github.com/Rajouane/MangeTask",
-    icon: <i className="fab fa-laravel fa-3x text-danger"></i>,
+    icon: <SiLaravel size={48} color="#dd0031" />,  // Laravel icon
   },
   {
     title: "PortFolio",
     description: "My personal portfolio built with React.",
     link: "https://github.com/Rajouane/PortFolio",
-    icon: <i className="fab fa-react fa-3x text-info"></i>,
+    icon: <FaReact size={48} color="#61dafb" />,  // React icon
   },
   {
     title: "Test Java",
     description: "Java testing project with basic logic.",
     link: "https://github.com/Rajouane/test-java",
-    icon: <i className="fab fa-java fa-3x text-warning"></i>,
+    icon: <FaJava size={48} color="#f89820" />,  // Java icon
   },
   {
     title: "Rental Store",
     description: "Vehicle rental management system.",
     link: "https://github.com/chafik101/rental-store",
-    icon: <i className="fas fa-car fa-3x text-primary"></i>,
+    icon: <FaCar size={48} color="#0d6efd" />,  // Car icon (blue)
   },
   {
     title: "Rental Cars Dashboard",
     description: "Dashboard for managing car rentals.",
     link: "https://github.com/chafik101/rentalCarsDashboard",
-    icon: <i className="fas fa-chart-line fa-3x text-success"></i>,
+    icon: <FaChartLine size={48} color="#198754" />,  // Chart line icon (green)
   },
   {
     title: "ManagTask",
     description: "Another version of task management application.",
     link: "https://github.com/Rajouane/ManagTask",
-    icon: <i className="fas fa-tasks fa-3x text-secondary"></i>,
+    icon: <FaTasks size={48} color="#6c757d" />,  // Tasks icon (gray)
   },
 ];
 
