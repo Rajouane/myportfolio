@@ -1,0 +1,94 @@
+import React from "react";
+
+const projects = [
+  {
+    title: "MangeTask",
+    description: "Task management app built using React and Laravel.",
+    link: "https://github.com/Rajouane/MangeTask",
+    icon: <i className="fab fa-laravel fa-3x text-danger"></i>,
+  },
+  {
+    title: "PortFolio",
+    description: "My personal portfolio built with React.",
+    link: "https://github.com/Rajouane/PortFolio",
+    icon: <i className="fab fa-react fa-3x text-info"></i>,
+  },
+  {
+    title: "Test Java",
+    description: "Java testing project with basic logic.",
+    link: "https://github.com/Rajouane/test-java",
+    icon: <i className="fab fa-java fa-3x text-warning"></i>,
+  },
+  {
+    title: "Rental Store",
+    description: "Vehicle rental management system.",
+    link: "https://github.com/chafik101/rental-store",
+    icon: <i className="fas fa-car fa-3x text-primary"></i>,
+  },
+  {
+    title: "Rental Cars Dashboard",
+    description: "Dashboard for managing car rentals.",
+    link: "https://github.com/chafik101/rentalCarsDashboard",
+    icon: <i className="fas fa-chart-line fa-3x text-success"></i>,
+  },
+  {
+    title: "ManagTask",
+    description: "Another version of task management application.",
+    link: "https://github.com/Rajouane/ManagTask",
+    icon: <i className="fas fa-tasks fa-3x text-secondary"></i>,
+  },
+];
+
+function Projects() {
+  return (
+    <div
+      className="py-5"
+      style={{
+        background: "linear-gradient(135deg, #f8f9fa, #e0f7fa)",
+        minHeight: "100vh",
+        fontFamily: "'Segoe UI', sans-serif",
+      }}
+    >
+      <div className="container">
+        <h2 className="text-center mb-5 fw-bold display-4 text-primary">
+          🚀 My Projects
+        </h2>
+        <div className="row g-4">
+          {projects.map(({ title, description, link, icon }, idx) => (
+            <div className="col-md-4" key={idx}>
+              <div
+                className="card h-100 border-0 shadow-lg p-3 rounded-4 text-center hover-card"
+                style={{
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                <div className="mb-3">{icon}</div>
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title fw-bold">{title}</h5>
+                  <p className="card-text text-muted flex-grow-1">{description}</p>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-dark mt-3"
+                  >
+                    🔗 View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        .hover-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+      `}</style>
+    </div>
+  );
+}
+
+export default Projects;
