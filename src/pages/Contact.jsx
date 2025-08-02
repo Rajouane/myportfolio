@@ -49,10 +49,10 @@ function Contact() {
         />
 
         <ContactItem
-          icon="🐱"
-          label="GitHub"
-          link="https://github.com/Rajouane"
-          value="github.com/Rajouane"
+          icon="📞"
+          label="Phone"
+          link="tel:+212612345678"
+          value="+212 612 345 678"
         />
 
         <ContactItem
@@ -87,6 +87,8 @@ function ContactItem({ icon, label, link, value }) {
         borderRadius: "12px",
         backdropFilter: "blur(6px)",
         background: "rgba(255, 255, 255, 0.15)",
+        flexWrap: "wrap",      // **Added for better wrapping on small screens**
+        justifyContent: "center",  // center content if wraps
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.color = "#ffb703";
