@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -17,10 +18,12 @@ function Home() {
         className="container d-flex align-items-center justify-content-center flex-column flex-md-row flex-wrap gap-4"
         style={{ maxWidth: "1100px" }}
       >
-        {/* النص */}
+        
         <div className="text-center text-md-start" style={{ flex: "1 1 450px" }}>
-          <h1 className="fw-bold mb-4 animate__animated animate__fadeInDown"
-              style={{ fontSize: "2.5rem" }}>
+          <h1
+            className="fw-bold mb-4 animate__animated animate__fadeInDown"
+            style={{ fontSize: "2.5rem" }}
+          >
             Hi, I'm Otmane Rajouane
           </h1>
 
@@ -33,15 +36,14 @@ function Home() {
             I'm currently learning Spring Boot to expand my backend skills further.
           </p>
 
-          <a
-            href="/projects"
+          <NavLink
+            to="/projects"
             className="btn btn-lg btn-outline-light mt-3 animate__animated animate__zoomIn"
           >
             View My Projects
-          </a>
+          </NavLink>
         </div>
 
-        {/* الصورة */}
         <div style={{ flex: "1 1 500px" }}>
           <img
             src={process.env.PUBLIC_URL + "/portfolio.jpg"}
