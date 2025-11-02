@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaJava, FaCar, FaTasks, FaChartLine } from "react-icons/fa";
+import { FaReact, FaJava, FaCar, FaTasks, FaChartLine, FaBook } from "react-icons/fa";
 import { SiLaravel } from "react-icons/si";
 
 const projects = [
@@ -12,15 +12,10 @@ const projects = [
   {
     title: "PortFolio",
     description: "My personal portfolio built with React.",
-    link: "https://github.com/Rajouane/PortFolio",
+    link: "https://github.com/Rajouane/myportfolio",
     icon: <FaReact size={48} color="#61dafb" />,  // React icon
   },
-  {
-    title: "Test Java",
-    description: "Java testing project with basic logic.",
-    link: "https://github.com/Rajouane/test-java",
-    icon: <FaJava size={48} color="#f89820" />,  // Java icon
-  },
+
   {
     title: "Rental Store",
     description: "Vehicle rental management system.",
@@ -32,6 +27,12 @@ const projects = [
     description: "Dashboard for managing car rentals.",
     link: "https://github.com/chafik101/rentalCarsDashboard",
     icon: <FaChartLine size={48} color="#198754" />,  // Chart line icon (green)
+  },
+    {
+    title: "Bibliothèque App",
+    description: "Dashboard for managing car rentals.",
+    link: "https://github.com/Rajouane/bibliotheque-app",
+    icon: <FaBook size={48} color="#6c757d" />,  // Chart line icon (green)
   },
   {
     title: "ManagTask",
