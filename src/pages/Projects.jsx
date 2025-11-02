@@ -5,40 +5,45 @@ import { SiLaravel } from "react-icons/si";
 const projects = [
   {
     title: "MangeTask",
-    description: "Task management app built using React and Laravel.",
+    description:
+      "Application de gestion des tâches développée avec React (frontend) et Laravel (backend), permettant la création, le suivi et la priorisation des tâches.",
     link: "https://github.com/Rajouane/MangeTask",
-    icon: <SiLaravel size={48} color="#dd0031" />,  // Laravel icon
+    icon: <SiLaravel size={48} color="#dd0031" />, // Laravel icon
   },
   {
     title: "PortFolio",
-    description: "My personal portfolio built with React.",
+    description:
+      "Mon portfolio personnel conçu avec React, présentant mes compétences, mes projets et mon parcours en développement web.",
     link: "https://github.com/Rajouane/myportfolio",
-    icon: <FaReact size={48} color="#61dafb" />,  // React icon
+    icon: <FaReact size={48} color="#61dafb" />, // React icon
   },
-
   {
     title: "Rental Store",
-    description: "Vehicle rental management system.",
+    description:
+      "Application complète de gestion de location de véhicules développée avec Laravel et React, incluant la gestion des réservations, des clients et des véhicules.",
     link: "https://github.com/chafik101/rental-store",
-    icon: <FaCar size={48} color="#0d6efd" />,  // Car icon (blue)
+    icon: <FaCar size={48} color="#0d6efd" />, // Car icon
   },
   {
     title: "Rental Cars Dashboard",
-    description: "Dashboard for managing car rentals.",
+    description:
+      "Tableau de bord interactif pour la gestion et le suivi des locations de voitures, avec statistiques et interface moderne construite avec React.",
     link: "https://github.com/chafik101/rentalCarsDashboard",
-    icon: <FaChartLine size={48} color="#198754" />,  // Chart line icon (green)
+    icon: <FaChartLine size={48} color="#198754" />, // Chart line icon
   },
-    {
+  {
     title: "Bibliothèque App",
-    description: "Dashboard for managing car rentals.",
+    description:
+      "Application de gestion de bibliothèque développée avec React et Spring Boot. Elle comprend une interface administrateur pour gérer les livres et les utilisateurs, ainsi qu’une interface client pour la consultation et l’emprunt des ouvrages. Le design est réalisé avec Bootstrap.",
     link: "https://github.com/Rajouane/bibliotheque-app",
-    icon: <FaBook size={48} color="#6c757d" />,  // Chart line icon (green)
+    icon: <FaBook size={48} color="#6c757d" />, // Book icon
   },
   {
     title: "ManagTask",
-    description: "Another version of task management application.",
+    description:
+      "Une version améliorée de l’application de gestion des tâches, avec une interface utilisateur optimisée et une meilleure organisation du code.",
     link: "https://github.com/Rajouane/ManagTask",
-    icon: <FaTasks size={48} color="#6c757d" />,  // Tasks icon (gray)
+    icon: <FaTasks size={48} color="#6c757d" />, // Tasks icon
   },
 ];
 
@@ -54,7 +59,7 @@ function Projects() {
     >
       <div className="container">
         <h2 className="text-center mb-5 fw-bold display-4 text-primary">
-          🚀 My Projects
+          🚀 Mes Projets
         </h2>
         <div className="row g-4">
           {projects.map(({ title, description, link, icon }, idx) => (
@@ -75,7 +80,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="btn btn-outline-dark mt-3"
                   >
-                    🔗 View on GitHub
+                    🔗 Voir sur GitHub
                   </a>
                 </div>
               </div>
